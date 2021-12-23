@@ -1,0 +1,22 @@
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  needed1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "needed1"
+  needed2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "needed2"
+  needed3:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "needed2"
+  needer:
+    runs-on: ubuntu-latest
+    needs: ["needed1"]
+    steps:
+      - run: echo "final!"
