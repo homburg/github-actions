@@ -6,3 +6,5 @@ runs:
     - run: date > date.txt
       shell: bash
     - uses: jfrog/setup-jfrog-cli@v2
+    - run: jfrog help
+      shell: bash

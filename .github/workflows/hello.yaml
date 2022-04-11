@@ -12,3 +12,5 @@ jobs:
       - run: cat date.txt
 
       - run: env
+
+      - run: jfrog help
