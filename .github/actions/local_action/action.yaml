@@ -1,0 +1,7 @@
+name: Local action
+description: Local action description
+runs:
+  using: "composite"
+  steps:
+    - run: date > date.txt
+      shell: bash
