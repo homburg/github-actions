@@ -7,4 +7,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - uses: ./.github/actions/local_action
+
+      - run: cat date.txt
+
       - run: env
