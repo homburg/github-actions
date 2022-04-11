@@ -5,3 +5,4 @@ runs:
   steps:
     - run: date > date.txt
       shell: bash
+    - uses: jfrog/setup-jfrog-cli@v2
